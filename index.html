@@ -4,42 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A brief description of your webpage.">
-    <meta name="Jericho" content="Your Name">
+    <meta name="author" content="Jericho">
     <title>BORIS | Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of your website.</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section of your website.</p>
-        </section>
-        <section id="services">
-            <h2>Services</h2>
-            <p>This is the services section of your website.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact section of your website.</p>
-        </section>
-    </main>
+        <div class="profile-section">
+        	<img src="images/sample_profile.jpg" height="300px" width="300px">
+	        <h1 class="student-name">Lagang, Jericho T.</h1>
+	        <h2 class="student-id">ID No.: 2020140109</h2>
+	        <p class="date-time">Date: June 18, 2024<br>Time: 12:34 PM</p>
+        </div>
+
+        <div class="action-section">
+        	    <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Borrow')">Borrow</button>
+                <button class="tablinks" onclick="openTab(event, 'Return')">Return</button>
+            </div>
+
+             <div id="Borrow" class="tabcontent">
+                <h3>Borrow</h3>
+                <p>Content for Borrow section.</p>
+            </div>
+            <div id="Return" class="tabcontent">
+                <h3>Return</h3>
+                <p>Content for Return section.</p>
+            </div>
+            
+        </div>
+
+    </div>
 
     <footer>
         <p>&copy; 2024 Gecko73i. All rights reserved.</p>
