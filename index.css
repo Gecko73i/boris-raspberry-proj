@@ -1,6 +1,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: cyan;
+}
+
+.header {
+	background-color: darkgrey;
+	margin-bottom: 0px;
 }
 
 .container {
@@ -23,9 +29,72 @@ body {
 .action-section {
     flex: 0 0 60%; /* Flex-grow: 0, Flex-shrink: 0, Flex-basis: 60% */
     background-color: #e0e0e0;
-    padding: 20px;
+    padding: 30px;
+    padding-top: 50px;
     box-sizing: border-box;
 }
+
+/* Tabs #################################*/
+
+.tab_box {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgba(229,229,229);
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+.tab_box .tab_btn {
+    font-size: 18px;
+    font-weight: 600;
+    color: #919191;
+    background: none;
+    border: none;
+    padding: 18px; 
+    cursor: pointer;   
+}
+
+.tab_box .tab_btn.active {
+    color: #7360ff;
+}
+
+.tab_content {
+    padding: 20px;
+}
+
+.tab_content .content_box {
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from{transform: translateX(50px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+}
+
+.tab_content .content_box.active {
+    display: block;
+}
+
+.tab_content .content_box h2{
+    margin-bottom: 10px;
+}
+
+.line {
+    position: absolute;
+    top: 55px;
+    left: 88px;
+    width: 99px;
+    height: 5px;
+    background-color: #7360ff;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+/* #################################*/
 
 footer {
     text-align: center;
